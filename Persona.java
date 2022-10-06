@@ -66,6 +66,16 @@ public class Persona {
         this.LoL = LoL;
     }
 
+
+    public boolean comprobarDNI(){
+        if (this.dniSinLetra > 0 && this.dniSinLetra < 99999999){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+
     public void setNacionalidad(){
         this.nacionalidad = nacionalidad;
     }
