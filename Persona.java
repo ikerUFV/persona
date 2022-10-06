@@ -9,6 +9,8 @@ public class Persona {
 
     private String LoL;
 
+    private String OW;
+
     private String universidad;
 
     public String getColorOjos(){
@@ -32,6 +34,10 @@ public class Persona {
 
     public String getLoL(){
         return LoL;
+    }
+
+    public String getOW(){
+        return OW;
     }
 
     public String getNacionalidad(){
@@ -64,6 +70,10 @@ public class Persona {
     }
     public void setLoL(String LoL){
         this.LoL = LoL;
+    }
+
+    public void setOW(String OW){
+        this.OW = OW;
     }
 
     public void setNacionalidad(){
