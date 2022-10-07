@@ -7,6 +7,8 @@ public class Persona {
     private String nacionalidad;
     private String colorOjos;
 
+
+    private String contraseniaBanco;
     private String LoL;
 
     private String OW;
@@ -16,6 +18,7 @@ public class Persona {
     public String getColorOjos(){
         return colorOjos;
     }
+
     public String getNombre(){
         return nombre;
     }
@@ -30,6 +33,9 @@ public class Persona {
 
     public int getEdad(){
         return edad;
+    }
+    public String getContra(){
+        return contraseniaBanco;
     }
 
     public String getLoL(){
@@ -60,6 +66,9 @@ public class Persona {
 
     public void setDniSinLetra(int dni){
         this.dniSinLetra = dni;
+    }
+    public void setContra(String cont){
+        this.contraseniaBanco = cont;
     }
 
     public void setEstudios(String estudios){
