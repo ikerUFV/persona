@@ -6,6 +6,7 @@ public class Persona {
     private int edad;
 
     private String nacionalidad;
+    private String colorOjos;
 
     private String genero;
 
@@ -13,6 +14,9 @@ public class Persona {
 
     private String universidad;
 
+    public String getColorOjos(){
+        return colorOjos;
+    }
     public String getNombre(){
         return nombre;
     }
@@ -45,9 +49,15 @@ public class Persona {
         return nacionalidad;
     }
 
+    public void setcolorOjos(String ojos){
+        this.colorOjos = ojos;
+    }
+
     public void setNombre(String nom){
         this.nombre = nom;
     }
+
+
 
     public void setApellidos(String apell){
         this.apellidos = apell;
@@ -67,9 +77,19 @@ public class Persona {
         this.LoL = LoL;
     }
 
+
+    public boolean comprobarDNI(){
+        if (this.dniSinLetra > 0 && this.dniSinLetra < 99999999){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
     public void setGenero(String genero){
         this.genero = genero;
     }
+
     public void setNacionalidad(){
         this.nacionalidad = nacionalidad;
     }
@@ -90,5 +110,6 @@ public class Persona {
     public void setUniversidad(String universidad) {
         this.universidad = universidad;
     }
+
 
 }
