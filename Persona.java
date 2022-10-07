@@ -4,8 +4,11 @@ public class Persona {
     private String estudios;
     private int dniSinLetra;
     private int edad;
+
     private String nacionalidad;
     private String colorOjos;
+
+    private String genero;
 
     private String LoL;
 
@@ -29,9 +32,17 @@ public class Persona {
     public int getEdad(){
         return edad;
     }
+    public String getGenero(){
+        return genero;
+    }
+
 
     public String getLoL(){
         return LoL;
+    }
+
+    public String getGenero(){
+        return genero;
     }
 
     public String getNacionalidad(){
@@ -75,6 +86,9 @@ public class Persona {
         }
     }
 
+    public void setGenero(String genero){
+        this.genero = genero;
+    }
 
     public void setNacionalidad(){
         this.nacionalidad = nacionalidad;
