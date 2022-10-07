@@ -5,13 +5,19 @@ public class Persona {
     private int dniSinLetra;
     private int edad;
     private String nacionalidad;
+    private String colorOjos;
 
 
     private String contraseniaBanco;
     private String LoL;
 
+    private String OW;
+
     private String universidad;
 
+    public String getColorOjos(){
+        return colorOjos;
+    }
 
     public String getNombre(){
         return nombre;
@@ -36,13 +42,23 @@ public class Persona {
         return LoL;
     }
 
+    public String getOW(){
+        return OW;
+    }
+
     public String getNacionalidad(){
         return nacionalidad;
+    }
+
+    public void setcolorOjos(String ojos){
+        this.colorOjos = ojos;
     }
 
     public void setNombre(String nom){
         this.nombre = nom;
     }
+
+
 
     public void setApellidos(String apell){
         this.apellidos = apell;
@@ -65,6 +81,10 @@ public class Persona {
         this.LoL = LoL;
     }
 
+    public void setOW(String OW){
+        this.OW = OW;
+    }
+
     public void setNacionalidad(){
         this.nacionalidad = nacionalidad;
     }
@@ -85,4 +105,6 @@ public class Persona {
     public void setUniversidad(String universidad) {
         this.universidad = universidad;
     }
+
+
 }
