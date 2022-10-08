@@ -5,11 +5,15 @@ public class Persona {
     private int dniSinLetra;
     private int edad;
     private String nacionalidad;
+
+    private String alergia;
     private String colorOjos;
 
     private String LoL;
 
     private String universidad;
+
+
 
     public String getColorOjos(){
         return colorOjos;
@@ -20,6 +24,10 @@ public class Persona {
 
     public String getApellidos(){
         return apellidos;
+    }
+
+    public String getAlergia(){
+        return alergia;
     }
 
     public int getDniSinLetra(){
@@ -48,9 +56,12 @@ public class Persona {
 
 
 
-    public void setApellidos(String apell){
-        this.apellidos = apell;
-    }
+    public void setApellidos(String apell){this.apellidos = apell; }
+
+    public void setAlergia(String alergia){this.alergia = alergia; }
+
+
+
 
     public void setDniSinLetra(int dni){
         this.dniSinLetra = dni;
@@ -78,7 +89,9 @@ public class Persona {
         }
         this.edad = ed;
     }
+    public void sumaDNI(int dni){
 
+    }
     public String getUniversidad() {
         return universidad;
     }
@@ -86,6 +99,7 @@ public class Persona {
     public void setUniversidad(String universidad) {
         this.universidad = universidad;
     }
+
 
 
 }
